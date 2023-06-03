@@ -9,6 +9,7 @@ function createGalleryEl(items) {
   let galleryElements = items.map(item => {
     let itemEl = document.createElement('li');
     itemEl.classList.add('gallery__item');
+    itemEl.style.listStyle = 'none';
 
     let linkEl = document.createElement('a');
     linkEl.classList.add('gallery__link');
