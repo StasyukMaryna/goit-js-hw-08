@@ -34,3 +34,11 @@ form.addEventListener('submit', function (event) {
   emailInput.value = '';
   messageInput.value = '';
 });
+
+form.addEventListener('input', function () {
+  const formData = {
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  saveDataToStorage(formData);
+});
